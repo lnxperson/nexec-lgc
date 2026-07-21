@@ -27,7 +27,7 @@ pub fn list(boot: Option<String>) {
     let mut files: Vec<_> = std::fs::read_dir(dir_path)
         .unwrap_or_else(|e| { eprintln!("error: failed to read {}: {}", dir, e); std::process::exit(1); })
         .filter_map(|e| e.ok())
-        .filter(|e| { let n = e.file_name().to_string_lossy(); n.ends_with(".conf") })
+        .filter(|e| { let name = e.file_name(); let n = name.to_string_lossy(); n.ends_with(".conf") })
         .collect();
     files.sort_by_key(|e| e.file_name());
 

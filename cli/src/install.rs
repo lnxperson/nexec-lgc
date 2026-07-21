@@ -219,7 +219,7 @@ fn build_bootloader() -> Result<String, String> {
 fn write_mbr(disk_device: &str, bootloader_path: &str) {
     cprintln!(CYAN, "Writing bootloader to MBR of {}", disk_device);
     let status = Command::new("dd")
-        .args(["if=".to_string() + bootloader_path, "of=".to_string() + disk_device, "bs=512", "count=1", "conv=notrunc"])
+        .args(["if=".to_string() + bootloader_path, "of=".to_string() + disk_device, "bs=512".to_string(), "count=1".to_string(), "conv=notrunc".to_string()])
         .status()
         .unwrap_or_else(|e| {
             eprintln!("\x1b[31merror:{} failed to run dd: {}", RESET, e);

@@ -16,7 +16,7 @@ const INSTALL_DIR: &str = "/EFI/nexec"; // same paths for consistency
 const CLI_INSTALL_PATH: &str = "/usr/bin/nexec-lgc";
 const BOOT_CANDIDATES: &[&str] = &["/boot", "/", "/boot/efi"];
 const SYS_MOUNTS: &str = "/proc/mounts";
-const RELEASE_URL: &str = "https://github.com/person134/nexec-legacy/releases/latest/download";
+const RELEASE_URL: &str = "https://github.com/person134/nexec-lgc/releases/latest/download";
 
 macro_rules! cprintln {
     ($color:expr, $($arg:tt)*) => { println!("{}{}{}", $color, format_args!($($arg)*), RESET) };

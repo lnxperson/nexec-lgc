@@ -1,4 +1,4 @@
-# nexec-legacy
+# nexec-lgc
 
 A lightweight legacy BIOS boot manager for x86 Linux and Windows.
 Finds your installed operating systems, presents a boot menu, and loads the kernel.

@@ -7,7 +7,7 @@ mod update;
 mod entry;
 
 #[derive(Parser)]
-#[command(name = "nexec-lgc", version, about = "nexec-legacy BIOS boot manager installer and management tool")]
+#[command(name = "nexec-lgc", version, about = "nexec-lgc BIOS boot manager installer and management tool")]
 struct Cli {
     #[command(subcommand)]
     command: Commands,

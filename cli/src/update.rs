@@ -1,7 +1,7 @@
 use std::process::Command;
 
 const VERSION: &str = env!("CARGO_PKG_VERSION");
-const RELEASE_URL: &str = "https://github.com/person134/nexec-legacy/releases/latest/download";
+const RELEASE_URL: &str = "https://github.com/person134/nexec-lgc/releases/latest/download";
 
 pub fn update() {
     println!("nexec-lgc update v{}", VERSION);

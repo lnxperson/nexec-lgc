@@ -2,7 +2,7 @@
 name = "nexec-lgc-bios"
 version = "0.1.0"
 edition = "2024"
-description = "nexec-legacy BIOS boot manager"
+description = "nexec-lgc BIOS boot manager"
 license = "MIT"
 autotests = false
 

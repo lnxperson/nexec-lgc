@@ -1,0 +1,14 @@
+[package]
+name = "nexec-lgc-bios"
+version = "0.1.0"
+edition = "2024"
+description = "nexec-legacy BIOS boot manager"
+license = "MIT"
+autotests = false
+
+[dependencies]
+nexec-config = { path = "../nexec-config" }
+pc-keyboard = "0.7"
+
+[build-dependencies]
+cc = "1.0"

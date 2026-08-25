@@ -25,5 +25,3 @@ sudo dd if=nexec-lgc-bios of=/dev/sdX bs=512 count=1 conv=notrunc
 ```
 
 Replace `/dev/sdX` with your boot disk (e.g. `/dev/sda`).
-
-To build from source instead, see [nexec-lgc on GitHub](https://github.com/person134/nexec-lgc).
